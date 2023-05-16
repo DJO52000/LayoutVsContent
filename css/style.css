@@ -54,7 +54,6 @@ p {
 @media (min-width: 40em) {
   .split {
     flex-direction: row;
-    justify-content: space-between;
   }
 
   /* .split > * {
@@ -92,6 +91,14 @@ h3 {
   font-size: var(--fs-500);
 }
 
+/* //////////////
+  General Styling
+////////////////*/
+
+section {
+  padding: 10rem 0;
+}
+
 /* components */
 
 .btn {
@@ -102,4 +109,9 @@ h3 {
   background: var(--clr-primary-400);
   color: var(--clr-neutral-100);
   padding: 0.5em 1.25em;
+}
+
+.card {
+  padding: var(--spacer);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
