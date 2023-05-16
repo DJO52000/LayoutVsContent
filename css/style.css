@@ -31,7 +31,17 @@ p {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /* Utility classes */
+.bg-dark {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+}
+
 .flow-content > * + * {
   margin-top: var(--flow-space, var(--spacer));
 }
@@ -56,10 +66,22 @@ p {
     flex-direction: row;
   }
 
-  /* .split > * {
+  .split > * {
     flex-basis: 100%;
-  } */
+  }
 
+  .col-1 {
+    flex-basis: 25%;
+  }
+
+  .col-2 {
+    flex-basis: 50%;
+  }
+
+  .col-3 {
+    flex-basis: 75%;
+  }
+  
   .split > * + * {
     margin: 0 0 0 var(--spacer);
   }
@@ -79,6 +101,7 @@ h1,
 h2,
 h3 {
   font-weight: var(--fw-700);
+  line-height: 1.1;
 }
 
 h1 {
@@ -112,6 +135,12 @@ section {
 }
 
 .card {
+  align-self: flex-start;
   padding: var(--spacer);
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.section-one {
+  background-image: url(/img/hero-bg.jpg);
+  background-size: cover;
 }
